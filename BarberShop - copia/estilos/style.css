@@ -1,0 +1,36 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background-color: rgb(63, 61, 61);
+    z-index: 900;
+    font-size: 13px;
+    gap: 30%;
+}
+
+header button{
+    background-color: red;
+    height: 35px;
+    border-radius: 30px;
+    cursor: pointer;
+    border-color: none;
+}
+
+.logo{
+    cursor: pointer;
+    margin-left: 2%;
+    width: 70px;
+    height: 70px;
+}
+
+.des{
+    font-family: 'Times New Roman', Times, serif;
+}
