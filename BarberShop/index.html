@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="imagenes/maquinilla-de-afeitar (1).png" alt="Logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre TuBarber</a></li>
+                <li><a href="#find">Encontrar</a></li>
+                <span style="display:inline-block; width:610px;"></span>
+                <li><a href="#login">Entrar</a></li>
+                <li><a href="#register">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="intro">
+            <div class="texto">
+                <h1><b>Los mejores barberos cerca de ti</b></h1>
+                <p>Encuentra los mejores barberos que se ajusten a tu presupuesto, perfil y tipo de pelo.
+                    Todo esto desde la comodidad de tu hogar!</p>
+                <button>Buscar Ahora</button>
+            </div>
+            <img src="imagenes/barbers.jpg" alt="Fotointro">
+        </div>
+    </section>
+    <hr>
+    <!--segunda seccion-->
+    <section id="find">
+        <div class="puntuacion">
+            <h1><b>LOS BARBEROS CON MEJOR PUNTUACION</b></h1>
+
+            <div class="puntuacion-carrusel">
+                <!-- Botón izquierda -->
+                <button class="arrow arrow_left"><i class="fa fa-angle-left"></i></button>
+
+                <ul id="carrusel">
+                    <li>
+                        <h2>Juanelin</h2>
+                    </li>
+                    <li>
+                        <h2>Sami</h2>
+                    </li>
+                    <li>
+                        <h2>Sebas</h2>
+                    </li>
+                </ul>
+
+                <!-- Botón derecha -->
+                <button class="arrow arrow_right"><i class="fa fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!--tercera seccion-->
+    <div class="user-toggle-container">
+        <button id="toggleButton" class="toggle-button">
+            <span class="user-status active" data-status="client">Cliente</span>
+            <span class="user-status" data-status="barber">Barbero</span>
+        </button>
+    </div>
+
+    <section id="about">
+
+        <section id="client-content" class="section">
+            <h2 class="title">Ventajas de usar TuBarber como cliente</h2>
+            <br>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Servicios en la comodidad de tu hogar.</h3>
+                    <p>Reserva citas desde la comodidad de tu sofá. Tu barbero se ajusta a tu horario, no al revés.</p>
+                </div>
+                <div class="card">
+                    <h3>Elige entre los mejores barberos.</h3>
+                    <p>Compara perfiles, lee reseñas y encuentra al profesional perfecto que se ajuste a tu estilo.</p>
+                </div>
+                <div class="card">
+                    <h3>Sin necesidad de esperar turnos.</h3>
+                    <p>Tu cita es privada y sin prisas. No más largas esperas en la barbería.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="barber-content" class="section hidden">
+            <h2 class="title">Ventajas de usar TuBarber como barbero.</h2>
+            <br>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Muestra tu trabajo al mundo.</h3>
+                    <p>Crea un portafolio digital, sube tus mejores cortes y atrae a nuevos clientes al instante.</p>
+                </div>
+                <div class="card">
+                    <h3>Crea una reputación.</h3>
+                    <p>Las reseñas de clientes satisfechos te ayudarán a construir una reputación sólida en tu
+                        comunidad.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Conexión rápida con clientes.</h3>
+                    <p>Recibe notificaciones de nuevas citas, comunícate directamente y gestiona tu negocio sin
+                        esfuerzo.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <script src="scripts/carrusel.js"></script>
+    <script src="scripts/ventajas.js"></script>
+
+</body>
+
+</html>
