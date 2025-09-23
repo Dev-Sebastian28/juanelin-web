@@ -1,35 +1,62 @@
 *{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-header{
-    display: flex;
+header {
     position: fixed;
-    align-items: center;
     top: 0;
     left: 0;
     right: 0;
-    height: 80px;
-    background-color: rgb(63, 61, 61);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     z-index: 900;
-    font-size: 13px;
-    gap: 30%;
+    background-color: #fff;
 }
 
-header button{
-    background-color: red;
-    height: 35px;
-    border-radius: 30px;
-    cursor: pointer;
-    border-color: none;
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 40px;
 }
 
-.logo{
-    cursor: pointer;
-    margin-left: 2%;
-    width: 70px;
-    height: 70px;
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-right: 30px;
 }
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 22px;
+    border-radius: 20px;
+    transition: background 0.2s, color 0.2s;
+    background: rgba(191, 0, 194, 0.05);
+}
+
+
+
+.nav-links li a:hover {
+    background: #a83232;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(168,50,50,0.2);
+}
+
+
+.logo:hover {
+    transform: scale(1.03);
+}
+
 
 .intro {
   display: flex;
@@ -99,3 +126,4 @@ hr{
     margin-right: 0%;
   }
 }
+
